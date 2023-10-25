@@ -27,7 +27,7 @@ const Section = ({ title }) => {
       <h1>Please leave feedback</h1>
       <FeedbackOptions
         options={['good', 'neutral', 'bad']}
-        FeedbackLeft={onLeaveFeedback}
+        feedbackLeft={onLeaveFeedback}
       />
 
       <h2>{title}</h2>

@@ -1,7 +1,7 @@
 import shortid from 'shortid';
 import css from './FeedbackOptions.module.css';
 
-const FeedbackOptions = ({ options, FeedbackLeft }) => {
+const feedbackOptions = ({ options, feedbackLeft }) => {
   return (
     <>
       <div className={css.button_conteiner}>
@@ -10,7 +10,7 @@ const FeedbackOptions = ({ options, FeedbackLeft }) => {
             <button
               className={css.Feedback_button}
               key={shortid.generate()}
-              onClick={() => FeedbackLeft(label)}
+              onClick={() => feedbackLeft(label)}
             >
               {label}
             </button>
@@ -21,4 +21,4 @@ const FeedbackOptions = ({ options, FeedbackLeft }) => {
   );
 };
 
-export default FeedbackOptions;
+export default feedbackOptions;
